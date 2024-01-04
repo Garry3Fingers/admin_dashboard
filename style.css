@@ -18,6 +18,11 @@ img[alt="magnify"] {
   width: 20px;
 }
 
+img[alt="dashboard"] {
+  height: auto;
+  width: 40px;
+}
+
 .search-bar div {
   background-color: #cbd5e1;
   height: 25px;
@@ -27,4 +32,9 @@ img[alt="magnify"] {
 .greetings img[alt="red-bird"] {
   height: auto;
   width: 50px;
+}
+
+.dashboard-row > img {
+  height: auto;
+  width: 20px;
 }

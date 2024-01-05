@@ -38,3 +38,18 @@ img[alt="dashboard"] {
   height: auto;
   width: 20px;
 }
+
+.card-img {
+  height: auto;
+  width: 18px;
+}
+
+.trending-card img {
+  height: auto;
+  width: 40px;
+  border-radius: 50%;
+}
+
+.trending-card img[alt="red-bird"] {
+  border-radius: 0%;
+}

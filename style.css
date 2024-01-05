@@ -1,6 +1,43 @@
+@font-face {
+  font-family: 'robotomedium';
+  src: url('./fonts/roboto-medium.woff2') format('woff2'),
+    url('./fonts/roboto-medium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'robotoregular';
+  src: url('./fonts/roboto-regular.woff2') format('woff2'),
+    url('./fonts/roboto-regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'robotothin';
+  src: url('./fonts/roboto-thin.woff2') format('woff2'),
+    url('./fonts/roboto-thin.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+:root {
+  --200-gray-color: #e5e7eb;
+  --white-color: #fff;
+}
+
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
 }
 
 img[alt="bell-alert"] {
@@ -23,8 +60,13 @@ img[alt="dashboard"] {
   width: 40px;
 }
 
+img[alt="dashboard"],
+.dashboard-row > img {
+  filter: invert(1);
+}
+
 .search-bar div {
-  background-color: #cbd5e1;
+  background-color: var(--200-gray-color);
   height: 25px;
   border-radius: 12px;
 }
@@ -52,4 +94,19 @@ img[alt="dashboard"] {
 
 .trending-card img[alt="red-bird"] {
   border-radius: 0%;
+}
+
+.sidebar {
+  font: 2rem 'robotomedium', sans-serif;
+  color: var(--white-color);
+  background-color: #3b82f6;
+}
+
+.header {
+  background-color: var(--white-color);
+  font: 1.5rem 'robotomedium', sans-serif;
+}
+
+.main-container {
+  background-color: var(--200-gray-color);
 }

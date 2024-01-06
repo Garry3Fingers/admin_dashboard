@@ -44,6 +44,7 @@ html {
 img[alt="bell-alert"] {
   height: auto;
   width: 18px;
+  cursor: pointer;
 }
 
 .logged-in-user img[alt="red-bird"] {
@@ -86,6 +87,7 @@ img[alt="dashboard"],
 .card-img {
   height: auto;
   width: 18px;
+  cursor: pointer;
 }
 
 .trending-card img {
@@ -158,6 +160,7 @@ button {
   border-radius: 15px;
   font: 1.2rem 'robotomedium', sans-serif;
   color: var(--white-color);
+  cursor: pointer;
 }
 
 .main-content {
@@ -168,4 +171,30 @@ button {
 .main-container {
   display: grid;
   grid-template: 1fr 5fr / 1fr 4fr;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  padding-top: 15px;
+  padding-left: 15px;
+  gap: 30px;
+}
+
+.dashboard-user-menu,
+.dashboard-user-options {
+  padding-left: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.sidebar-header {
+  display: flex;
+  gap: 10px;
+}
+
+.dashboard-row {
+  display: flex;
+  gap: 21px;
 }
